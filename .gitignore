@@ -1,0 +1,7 @@
+dist/
+.idea/
+image_renamer.egg-info
+venv/
+exif-samples/
+jpg/
+build/
