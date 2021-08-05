@@ -5,3 +5,4 @@ venv/
 exif-samples/
 jpg/
 build/
+__pycache__/

@@ -1,7 +1,7 @@
 from setuptools import setup
 from setuptools import find_packages
 
-version = "0.1.0"
+version = "0.1.2"
 
 install_requires = [
     "Pillow"
@@ -24,7 +24,9 @@ setup(
     author="Jozef Galbicka",
     author_email="alerts.cryp@gmail.com",
     license="MIT",
-    scripts=['image_renamer.py'],
+    entry_points={
+        "console_scripts": ['image-renamer=image_renamer.image_renamer:main']
+        },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: MIT License",
@@ -35,7 +37,7 @@ setup(
         "Topic :: Multimedia",
         "Topic :: System :: Filesystems",
     ],
-    packages=[],
-    include_package_data=True,
+    packages=find_packages(),
+    # include_package_data=True,
     install_requires=install_requires,
 )
